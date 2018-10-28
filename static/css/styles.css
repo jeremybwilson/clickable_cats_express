@@ -1,0 +1,60 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 0px auto;
+}
+
+.container h1, .container h3, p, img {
+    text-align: center;
+}
+
+.title-header {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(226, 118, 185);
+    vertical-align: middle;
+
+}
+.homelist {
+    list-style-type: none;
+    text-align: center;
+}
+
+.homelist li {
+    display: inline-block;
+}
+
+.image {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 3px;
+}
+
+.food {
+    background-color: rgb(226, 118, 185);
+}
+
+.age {
+    background-color: rgb(192, 80, 149);
+}
+
+.sleep-spot {
+    background-color: rgb(165, 50, 121);
+}
+
+.food, .age, .sleep-spot {
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.error {
+    color: red;
+    font-size: 1em;
+}

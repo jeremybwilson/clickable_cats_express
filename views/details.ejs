@@ -1,0 +1,26 @@
+<% include partials/header %>
+            <div class="row">
+                <div class="col">
+                    <% if(cat){ %>
+                        <h1 class="title-header"><%= title %> for <%= cat.name %></h1>
+                        <h3>Name: <%= cat.name %></h3>
+                        <img class="image" src='/images/<%= cat.image %>' alt='<%= cat.name %> image'>
+                        <div class="food">
+                            <p>Favorite food: <%= cat.food %></p>
+                        </div>
+                        <div class="age">
+                            <p>Age: <%= cat.age %></p>
+                        </div>
+                        <div class="sleep-spot">
+                            <p>Favorite sleeping spot: <%= cat.sleep_spot %></p>
+                        </div>
+                        <hr>
+                    <% } else { %>
+                        <p>No cat located.</p> 
+                    <% } %>
+                    <div>
+                        <a href="/">Home Page</a>
+                    </div>
+                </div>
+            </div>
+<% include partials/footer %>

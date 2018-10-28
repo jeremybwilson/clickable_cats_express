@@ -1,0 +1,14 @@
+<% include partials/header %>
+            <div class="row">
+                <div class="col">
+                    <h1 class="title-header"><%= title %></h1>
+                    <% for (const cat in cats) { %>
+                        <a href="/cats/<%= cats[cat].cat_id %>" title="Link to <%= cats[cat].name %>"><img class="image" src='images/<%= cats[cat].image %>' alt='<%= cats[cat].name %> image'></a>
+                        <hr>
+                    <% } %>
+                    <div>
+                        <a href="/">Home Page</a>
+                    </div>
+                </div>
+            </div>
+<% include partials/footer %>
